@@ -18,6 +18,10 @@ function mkcd() {
 	NAME=$1; mkdir -p "$NAME"; cd "$NAME"; 
 }
 
+function up() { 
+	DEEP=$1; for i in $(seq 1 ${DEEP:-"1"}); do cd ../; done; 
+}
+
 alias gst='git status';
 alias gdrop='git stash; git stash drop;'
 
