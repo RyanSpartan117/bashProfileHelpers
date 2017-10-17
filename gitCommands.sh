@@ -11,7 +11,11 @@ function finddirectory() {
 }
 
 function firefoxtestrun() {
-  IN_BROWSER_FIREFOX=true bundle exec cucumber -t "$1" --color;
+	IN_BROWSER_FIREFOX=true bundle exec cucumber -t "$1" --color;
+}
+
+function mkcd() { 
+	NAME=$1; mkdir -p "$NAME"; cd "$NAME"; 
 }
 
 alias gst='git status';
