@@ -5,6 +5,7 @@ function gac() {
 
 function gdf() {
 	git diff "$1";
+}
 
 function finddirectory() {
 	find . -type d | grep "$1";
