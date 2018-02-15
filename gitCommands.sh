@@ -30,7 +30,7 @@ function touchmultiple() {
 	done
 }
 
-alias gst='git status';
+alias gst='git status;'
 alias gdrop='git stash; git stash drop;'
 
 # cd - 
