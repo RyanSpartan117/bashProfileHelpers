@@ -22,6 +22,13 @@ function up() {
 	DEEP=$1; for i in $(seq 1 ${DEEP:-"1"}); do cd ../; done; 
 }
 
+function touchmultiple() {
+	for var in "$@"
+	do
+    	touch "$var"
+	done
+}
+
 alias gst='git status';
 alias gdrop='git stash; git stash drop;'
 
